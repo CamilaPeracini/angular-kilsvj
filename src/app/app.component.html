@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<p>
+	<img alt="" src=<img class="irc_mi" src="https://img.ibxk.com.br/2017/07/07/07160155479276.jpg?w=1120&amp;h=420&amp;mode=crop&amp;scale=both" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" alt="Resultado de imagem para twitter" style="margin-top: 44px;" data-iml="1563562138429" width="208" height="66">
+ </p>
+
+<div class="formGroup">
+   <form [formGroup]='formCadastro' [formGroup]="tweetForm" (ngSubmit)="onSubmit()">
+    <input matInput placeholder="Status"  formControlName="tweetdata" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.tweetdata.errors }" >
+  <p>
+     <button type="submit" value="Ok" formControlName='botton' [disabled]="loading" class="btn btn-primary">TWEET</button>
+      <img *ngIf="loading" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" />
+
+</form>
+</div>
